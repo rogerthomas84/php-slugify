@@ -13,7 +13,7 @@ class Slugify
      * @param string $str
      * @return string
      */
-    public static function get(string $str): string
+    public static function get(string $str, ?int $maxLength = null): string
     {
         // replace non letter or digits by -
         $text = preg_replace('~[^\pL\d]+~u', '-', $str);
@@ -28,7 +28,12 @@ class Slugify
         // lowercase
         $text = strtolower($text);
         if (empty($text)) {
-            return 'n-a';
+            $text = 'n-a';
+        }
+        if ($maxLength !== null) {
+            if (mb_strlen($text) > $maxLength) {
+                return rtrim(substr($text, 0, $maxLength), '-');
+            }
         }
         return $text;
     }

@@ -12,7 +12,8 @@
   ],
   "require": {
     "php": ">=7.1",
-    "ext-iconv": "*"
+    "ext-iconv": "*",
+    "ext-mbstring": "*"
   },
   "autoload": {
     "psr-0": { "Slugify": "src" }
