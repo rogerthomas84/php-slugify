@@ -5,7 +5,7 @@ Generate a URL safe slugs from strings...
 
 ## Usage:
 
-`composer require slugify/slugify`
+`composer require rogerthomas84/slugify`
 
 #### Convert a string to a slug:
 
