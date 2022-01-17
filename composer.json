@@ -1,9 +1,9 @@
 {
-  "name": "rogerthomas84/slugify",
+  "name": "slugify/slugify",
   "description": "Generate slugs",
   "keywords": ["slugify", "slug", "slugs", "php"],
   "homepage": "https://github.com/rogerthomas84/slugify",
-  "license": "Proprietary",
+  "license": "mit",
   "authors": [
     {
       "name": "Roger Thomas",
