@@ -5,6 +5,8 @@ Generate a URL safe slugs from strings...
 
 ## Usage:
 
+`composer require slugify/slugify`
+
 #### Convert a string to a slug:
 
 ```php
